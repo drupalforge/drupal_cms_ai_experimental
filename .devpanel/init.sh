@@ -87,7 +87,7 @@ if [ -z "$(drush status --field=db-status)" ]; then
     drush -n cset ai_provider_litellm.settings api_key litellm_api_key
     drush -n cset ai_provider_litellm.settings moderation false --input-format yaml
     drush -n cset ai_provider_litellm.settings host "${DP_AI_HOST:="https://ai.drupalforge.org"}"
-    drush recipe ../recipes/drupal_cms_ai --input=drupal_cms_ai.provider=litellm
+    drush -q recipe ../recipes/drupal_cms_ai --input=drupal_cms_ai.provider=litellm
     drush -n cset ai.settings default_providers.chat.provider_id litellm
     drush -n cset ai.settings default_providers.chat.model_id openai/gpt-5.2
     drush -n cset ai.settings default_providers.chat_with_complex_json.provider_id litellm
