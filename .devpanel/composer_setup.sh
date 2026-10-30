@@ -221,6 +221,7 @@ composer require -n --no-update \
     cweagans/composer-patches \
     drupal/ai_provider_litellm \
     drupal/byte \
+    drupal/drupal_cms_ai \
     jquery/inputmask \
     jquery/intl-tel-input \
     jquery/rateit \
