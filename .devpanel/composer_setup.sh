@@ -220,6 +220,7 @@ composer require -n --no-update \
     codemirror/codemirror \
     cweagans/composer-patches \
     drupal/ai_provider_litellm \
+    drupal/byte \
     jquery/inputmask \
     jquery/intl-tel-input \
     jquery/rateit \
